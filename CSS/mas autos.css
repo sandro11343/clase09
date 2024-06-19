@@ -1,0 +1,73 @@
+/* REPASO DE FLEBOX */
+
+/* .contenedor{
+    border: 3px red solid;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.uno{
+    background-color:orange;
+}
+.dos{
+    background-color:orangered ;
+}
+.tres{
+    background-color:rgb(220, 110, 20);
+} */
+/* CLASE 07 - GRILLAS */
+
+/* .contenedorGrilla{
+    display: grid;
+    grid-template-columns:  20% 30% 30% 20% ;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    column-gap: 20px;
+    row-gap: 15px;
+} */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    
+        .div1 { grid-area: 1 / 1 / 4 / 3;
+        background-color: gray; }
+        .div2 { grid-area: 4 / 1 / 6 / 6;
+        background-color: aqua; }
+        .div3 { grid-area: 1 / 3 / 4 / 4;
+        background-color: blue; }
+        .div4 { grid-area: 1 / 4 / 4 / 6; 
+        background-color: blueviolet;}
+
+    @media(max-width:992px){
+
+        .div1 { grid-area: 1 / 1 / 3 / 4; }
+        .div2 { grid-area: 1 / 4 / 3 / 6; }
+        .div3 { grid-area: 3 / 1 / 6 / 3; }
+        .div4 { grid-area: 3 / 3 / 6 / 6; }
+
+
+    }
+    @media(max-width:600px){
+    .div1 { grid-area: 1 / 1 / 6 / 2;
+    background-color: orange; }
+    .div2 { grid-area: 1 / 2 / 6 / 4; 
+        background-color: red;}
+    .div3 { grid-area: 1 / 4 / 3 / 6; background-color:yellow ;}
+    .div4 { grid-area: 3 / 4 / 6 / 6; background-color: aqua;}
+    }
+
+    
+
